@@ -1,0 +1,167 @@
+.container {
+  padding: 0 0rem;
+  display: flex;
+  flex-direction: column;
+  color: #0d0c0c;
+  font-family: 'Lato';
+}
+
+.header {
+  height: 48px;
+  background-color: #0070f3;
+  width: 100vw;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.header li {
+  display: inline;
+  float: left;
+}
+
+.active {
+  float: right !important;
+}
+
+.header a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: #111;
+}
+
+.formPesquisa {
+  margin: 64px;
+}
+
+.formPesquisa input[type=text]{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.formPesquisa button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.cartoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cartao {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 20px;
+  margin: 10px 40px;
+  cursor: pointer;
+}
+
+.cartao:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cartao h1 {
+  font-size: 18px;
+  margin-bottom: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
+}
+
+.cartao h2 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
+}
+
+.cartao h3 {
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: -5px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
+}
+
+.cartao ul {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: auto;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.cartao ul li {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cartao .barril {
+  color: darkred;
+}
+
+.cartao .neutro {
+  color: goldenrod;
+}
+
+.cartao .deboa {
+  color: darkcyan;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+

@@ -2,6 +2,8 @@
   padding: 0 0rem;
   display: flex;
   flex-direction: column;
+  color: #0d0c0c;
+  font-family: 'Lato';
 }
 
 .header {
@@ -38,29 +40,31 @@
   background-color: #111;
 }
 
-.formPesquisa {
-  margin: 64px;
+.nomeDisciplina {
+  font-size: 48px;
+  margin:0px;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: #0d0c0c;
+  align-self:center;
 }
 
-.formPesquisa input[type=text]{
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
+.codigoDisciplina {
+  font-size: 14px;
+  margin: 0px 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
+  align-self:center;
 }
 
-.formPesquisa button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
+.nomeUniversidade {
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
+  align-self:center;
 }
 
 .cartoes {
@@ -83,15 +87,31 @@
 }
 
 .cartao h1 {
-  font-size: 24px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
 }
 
 .cartao h2 {
-  font-size: 18px;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
 }
 
 .cartao h3 {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 200;
+  margin-top: -5px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 100;
+  font-family: 'Lato';
+  color: #0d0c0c;
 }
 
 .cartao ul {
