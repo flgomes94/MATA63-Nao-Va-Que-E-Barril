@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.9",
+    "lodash": "^4.17.21",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "touch-cli": "^0.0.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
