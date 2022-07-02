@@ -1,8 +1,13 @@
+import Professores from '../professores'
+import { useState } from 'react';
 import styles from  './disciplinas.module.css'
 
 export default function Disciplinas() {
+  const [visible,setVisible] = useState(false);
+  const handle = () => setVisible(!visible);
     return (
         <div className={styles.container}>
+          <Professores visible={visible} handle={handle}/>
       <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
       {
         // Header
@@ -21,7 +26,7 @@ export default function Disciplinas() {
       <h2 className={styles.codigoDisciplina}>MAT63</h2>
       <h3 className={styles.nomeUniversidade}>UFBA</h3>
       <div className={styles.cartoes}>
-        <div className={styles.cartao}>
+        <div className={styles.cartao} onClick={handle}>
           <h1>Ivan Machado</h1>
           <ul>
             <li className={styles.barril}>🤬 20% Barril</li>

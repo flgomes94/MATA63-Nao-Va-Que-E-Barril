@@ -1,0 +1,48 @@
+.voteNoProfessor {
+    font-size: 18px;
+    text-align: left;
+    margin: 0px 30px 0px;
+}
+
+.informacoesDoProfessor {
+    margin-left: 30px;
+}
+.informacoesDoProfessor h1 {
+    font-size: 18px;
+    text-align: left;
+    margin: 0px;
+}
+
+.informacoesDoProfessor ul {
+    list-style-type: disc;
+}
+
+.informacoesDoProfessor li {
+    font-size: 14px;
+    margin: 0px;
+    text-align: left;
+}
+
+.comentarios h1{
+    font-size: 18px;
+}
+
+.comentario {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.comentario h1 {
+    font-size: 16px;
+    text-align: left;
+}
+
+.comentario h2 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.comentario p {
+    text-align: justify;
+    font-size: 12px;
+}

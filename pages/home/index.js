@@ -3,7 +3,7 @@ import styles from  './Home.module.css'
 export default function Home() {
     return (
         <div className={styles.container}>
-      <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'></link>
       {
         // Header
       }
