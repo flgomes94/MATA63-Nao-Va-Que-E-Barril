@@ -1,3 +1,4 @@
+// @ts-ignore
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BsPlusCircle } from 'react-icons/bs';

@@ -1,3 +1,4 @@
+// @ts-ignore
 import {
   Input, Modal, Spacer, Textarea,
   Button,

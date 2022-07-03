@@ -1,7 +1,6 @@
+// @ts-ignore
 import { v4 } from 'uuid';
 import lodash from 'lodash';
-import { Disciplina } from './disciplina.dto';
-import DisciplinasRepository from './disciplinas';
 import { Professor } from './professor.dto';
 
 class ProfessoresRepository {
