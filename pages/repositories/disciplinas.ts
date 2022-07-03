@@ -9,7 +9,7 @@ class DisciplinasRepository {
   private static instance: DisciplinasRepository;
 
   constructor() {
-    this.disciplinas = Array();
+    this.disciplinas = [];
     this.addDisciplina('GEOMETRIA ANALÍTICA', 'MATA01', 'Universidade Federal da Bahia - UFBA');
     this.addDisciplina('CÁLCULO A', 'MATA02', 'Universidade Federal da Bahia - UFBA');
     this.addDisciplina('INTRODUÇÃO À LÓGICA DE PROGRAMAÇÃO', 'MATA37', 'Universidade Federal da Bahia - UFBA');

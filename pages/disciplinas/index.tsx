@@ -47,7 +47,7 @@ export default function Disciplinas() {
       }
       <div className={styles.header}>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><Link href="/">Home</Link></li>
           <li><a href="#">Postagens</a></li>
           <li><a href="#">Login</a></li>
           <li><a href="#">Registrar-se</a></li>
