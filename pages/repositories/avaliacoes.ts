@@ -23,7 +23,7 @@ class AvaliacoesRepository {
     return this.avaliacoes;
   }
 
-  addAvaliacao(comentario:string, nome:string, avaliacao:'barril' | 'neutro' | 'deboa', professorId: string) {
+  addAvaliacao(comentario:string, nome:string, avaliacao:'barril' | 'neutro' | 'deboa'| 'semavaliacao', professorId: string) {
     const id = v4();
     const avaliacaoObj:Avaliacao = {
       id, comentario, nome, avaliacao, professorId,

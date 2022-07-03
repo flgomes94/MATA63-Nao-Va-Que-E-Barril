@@ -1,35 +1,33 @@
-import { React } from "react";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogTitle from "@material-ui/core/DialogTitle";
+import { React } from 'react';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
 
 export default function FormDialog(props) {
-
-  
   const handleChangeValuesDisciplina = (value) => {
     props.setValuesDisciplina((prevValues) => ({
       ...prevValues,
       [value.target.id]: value.target.value,
-    }))
-  }
+    }));
+  };
 
   const handleChangeValuesProfessor = (value) => {
     props.setValuesProfessor((prevValues) => ({
       ...prevValues,
       [value.target.id]: value.target.value,
-    }))
-  }
+    }));
+  };
 
   const handleRegisterDisciplina = () => {
     console.log(props.valuesDisciplina);
-  }
+  };
 
   const handleRegisterProfessor = () => {
     console.log(props.valuesProfessor);
-  }
+  };
 
   /*
   const handleChangeEditValues = (value) => {
@@ -49,7 +47,7 @@ export default function FormDialog(props) {
       console.log(response);
       handleClose();
     })
-    
+
     const handleEditClient = () => {
       console.log(props.id)
       console.log(props.editValues)
@@ -66,72 +64,71 @@ export default function FormDialog(props) {
 
   function handleClose() {
     props.setOpen(false);
-  }; 
-
+  }
 
   return (
     <div>
       {props.disciplina ? (
         <Dialog
-        open={props.open}
-        aria-labelledby="form-dialog-title"
-      >
-        <DialogTitle id="form-dialog-title">Disciplina</DialogTitle>
-        <DialogContent>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="Nome"
-            type="text"
-            fullWidth
-            onChange={handleChangeValuesDisciplina}
-          />
-          <TextField
-            autoFocus
-            margin="dense"
-            id="codigo"
-            label="Código"
-            type="text"
-            fullWidth
-            onChange={handleChangeValuesDisciplina}
-          /> 
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Cancelar
-          </Button>
-          <Button onClick={handleRegisterDisciplina} color="primary">
-            Salvar
-          </Button>
-        </DialogActions>
-      </Dialog>
+          open={props.open}
+          aria-labelledby="form-dialog-title"
+        >
+          <DialogTitle id="form-dialog-title">Disciplina</DialogTitle>
+          <DialogContent>
+            <TextField
+              autoFocus
+              margin="dense"
+              id="name"
+              label="Nome"
+              type="text"
+              fullWidth
+              onChange={handleChangeValuesDisciplina}
+            />
+            <TextField
+              autoFocus
+              margin="dense"
+              id="codigo"
+              label="Código"
+              type="text"
+              fullWidth
+              onChange={handleChangeValuesDisciplina}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} color="primary">
+              Cancelar
+            </Button>
+            <Button onClick={handleRegisterDisciplina} color="primary">
+              Salvar
+            </Button>
+          </DialogActions>
+        </Dialog>
       ) : (
         <Dialog
-        open={props.open}
-        aria-labelledby="form-dialog-title"
-      >
-        <DialogTitle id="form-dialog-title">Professor</DialogTitle>
-        <DialogContent>
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            label="Nome"
-            type="text"
-            fullWidth
-            onChange={handleChangeValuesProfessor}
-          />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Cancelar
-          </Button>
-          <Button onClick={handleRegisterProfessor} color="primary">
-            Salvar
-          </Button>
-        </DialogActions>
-      </Dialog>
+          open={props.open}
+          aria-labelledby="form-dialog-title"
+        >
+          <DialogTitle id="form-dialog-title">Disciplina</DialogTitle>
+          <DialogContent>
+            <TextField
+              autoFocus
+              margin="dense"
+              id="name"
+              label="Nome"
+              type="text"
+              fullWidth
+              onChange={handleChangeValuesProfessor}
+            />
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} color="primary">
+              Cancelar
+            </Button>
+            <Button onClick={handleRegisterProfessor} color="primary">
+              Salvar
+            </Button>
+          </DialogActions>
+        </Dialog>
       )}
     </div>
   );

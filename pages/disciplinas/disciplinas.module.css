@@ -6,6 +6,12 @@
   font-family: 'Lato';
 }
 
+.modalAddProfessor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   height: 48px;
   background-color: #0070f3;

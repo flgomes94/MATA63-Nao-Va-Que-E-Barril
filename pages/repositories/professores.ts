@@ -25,13 +25,11 @@ class ProfessoresRepository {
     return ProfessoresRepository.instance;
   }
 
-  addProfessor(nome:string, disciplina:string) {
+  addProfessor(nome:string, disciplinaId:string) {
     const id = v4();
     const barril = 0;
     const neutro = 0;
     const deboa = 0;
-    const { id: disciplinaId } = DisciplinasRepository
-      .getInstance().getDisciplinaByName(disciplina);
     const professor:Professor = {
       id, nome, barril, neutro, deboa, disciplinaId,
     };
