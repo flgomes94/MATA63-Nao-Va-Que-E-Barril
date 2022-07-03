@@ -8,6 +8,17 @@ import AvaliacoesRepository from '../repositories/avaliacoes';
 import ProfessoresRepository from '../repositories/professores';
 import styles from './professores.module.css';
 
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      visible: false,
+      handle: () => {},
+      professor: {},
+      setProfessor: () => {},
+    }, // will be passed to the page component as props
+  };
+}
+
 export default function Professores({
   visible, handle, professor, setProfessor,
 }) {
