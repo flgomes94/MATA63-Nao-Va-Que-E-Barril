@@ -67,6 +67,16 @@
   align-self:center;
 }
 
+.add {
+  display: flex;
+  background-color: #FFFFFF;
+  color:#0070f3;
+  margin-right: 90px;
+  border: none;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
 .cartoes {
   display: flex;
   align-items: center;
