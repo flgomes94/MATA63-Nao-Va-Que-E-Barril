@@ -7,6 +7,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: 'Lato';
+  font-display: swap;
+  src: url('../assets/Lato/Lato-Regular.ttf');
+}
+
 a {
   color: inherit;
   text-decoration: none;
