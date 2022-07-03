@@ -46,12 +46,12 @@ export default function Disciplinas() {
       }
       <div className={styles.header}>
         <ul>
-          <li><Link href="/">Início</Link></li>
-          <li><a href="#home">Professores</a></li>
-          <li><a href="#home">Login</a></li>
-          <li><a href="#home">Registrar-se</a></li>
-          <li className={styles.active}><a href="#home">Sair</a></li>
-          <li className={styles.active}><a href="#home">Opções</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Postagens</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Registrar-se</a></li>
+          <li className={styles.active}><a href="#home">Login</a></li>
+          <li className={styles.active}><a href="#home">Registrar</a></li>
         </ul>
       </div>
       <h1 className={styles.nomeDisciplina}>{disciplina?.nome || ''}</h1>
